@@ -1,0 +1,15 @@
+{
+  "name": "typescript-refs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "dev": "tsc --build tsconfig.build.json -w",
+    "deploy": "terraform apply"
+  }
+}

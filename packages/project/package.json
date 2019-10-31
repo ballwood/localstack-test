@@ -1,0 +1,35 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "nohoist": [
+      "*"
+    ]
+  },
+  "dependencies": {
+    "common": "1.0.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.5",
+    "aws-sdk": "^2.560.0",
+    "mocha": "^6.2.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "webpack": "webpack src/index1.ts",
+    "webpack:watch": "webpack --watch src/index1.ts",
+    "build": "tsc --build",
+    "dev": "tsc --build -w",
+    "test": " mocha -r ts-node/register  ./**/*.test.ts"
+  }
+}

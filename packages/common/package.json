@@ -1,0 +1,20 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.5",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "tsc --build -w",
+    "test": " mocha -r ts-node/register  ./**/*.test.ts"
+  }
+}
